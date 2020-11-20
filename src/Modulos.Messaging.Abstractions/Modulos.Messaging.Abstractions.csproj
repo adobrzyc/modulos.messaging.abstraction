@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>0.0.1</VersionPrefix>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTags>modulos;messaging;modulos.messaging;cqrs;</PackageTags>
+    <Description>Abstractions for Modulos.Messaging package. Designed to be placed into shared (e.q., nuget packages) project/packages containing only defined messages and configuration of them.</Description>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageProjectUrl>https://github.com/adobrzyc/modulos.messaging.abstractions</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/adobrzyc/modulos.messaging.abstractions</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Adrian Dobrzycki</Authors>
+    <Copyright>Adrian Dobrzycki</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RootNamespace>Modulos.Messaging</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+
+</Project>
