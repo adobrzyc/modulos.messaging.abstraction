@@ -1,6 +1,5 @@
 using System;
 using System.Runtime.Serialization;
-using Modulos.Messaging.Transport;
 
 // ReSharper disable NonReadonlyMemberInGetHashCode
 

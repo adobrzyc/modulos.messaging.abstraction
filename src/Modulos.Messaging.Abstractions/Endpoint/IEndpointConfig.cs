@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Modulos.Messaging.Configuration
+namespace Modulos.Messaging
 {
     /// <summary>
     /// Defines config used to establish remote call. 

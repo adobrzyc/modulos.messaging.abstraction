@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Modulos.Messaging.Compression
+namespace Modulos.Messaging
 {
     [DataContract]
     public struct CompressionEngineId : IEquatable<CompressionEngineId>

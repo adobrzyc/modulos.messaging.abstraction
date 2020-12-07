@@ -1,4 +1,6 @@
-﻿namespace Modulos.Messaging.Security
+﻿// ReSharper disable UnusedMember.Global
+
+namespace Modulos.Messaging
 {
     public enum AuthenticationMode
     {

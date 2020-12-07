@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Modulos.Messaging.Transport;
 
-namespace Modulos.Messaging.Configuration
+// ReSharper disable UnusedMember.Global
+// ReSharper disable UnusedType.Global
+
+namespace Modulos.Messaging
 {
     /// <summary>
     /// Defines configuration source for specified <see cref="Transport"/>.

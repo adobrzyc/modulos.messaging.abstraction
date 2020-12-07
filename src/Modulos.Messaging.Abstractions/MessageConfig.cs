@@ -2,11 +2,8 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Modulos.Messaging.Compression;
-using Modulos.Messaging.Security;
-using Modulos.Messaging.Serialization;
-using Modulos.Messaging.Transport;
 
+// ReSharper disable UnusedType.Global
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable UnusedMember.Global
 
@@ -39,6 +36,16 @@ namespace Modulos.Messaging
             
             if(source.Properties.Count > 0)
                 Properties = new Dictionary<string, string>(source.Properties);
+        }
+
+        public bool ValidateEndpoint 
+        {
+            get => validateEndpoint;
+            set
+            {
+                ThrowIfFrozen();
+                validateEndpoint = value;
+            }
         }
 
         public TransportEngineId TransportEngine
@@ -174,5 +181,6 @@ namespace Modulos.Messaging
         private CompressionEngineId responseCompressionEngine;// =  new CompressionEngineId("none");
         private TransportEngineId transportEngine;
         private bool supportConnectionMark;
+        private bool validateEndpoint;
     }
 }

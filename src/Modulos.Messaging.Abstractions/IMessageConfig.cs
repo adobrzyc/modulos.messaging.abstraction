@@ -1,9 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Modulos.Messaging.Compression;
-using Modulos.Messaging.Security;
-using Modulos.Messaging.Serialization;
-using Modulos.Messaging.Transport;
 
 // ReSharper disable UnusedMember.Global
 
@@ -15,14 +11,21 @@ namespace Modulos.Messaging
     public interface IMessageConfig : IFreezable
     {
         /// <summary>
+        /// Defines authentication mode.
+        /// Modifying this value on the client-side will have no effect on the host side.
+        /// </summary>
+        AuthenticationMode AuthenticationMode { get; set; }
+
+        /// <summary>
+        /// True if endpoint should be validated on host side, otherwise false.
+        /// Modifying this value on the client-side will have no effect on the host side.
+        /// </summary>
+        bool ValidateEndpoint { get; set; }
+
+        /// <summary>
         /// Defines transport layer used to communicate.
         /// </summary>
         TransportEngineId TransportEngine { get; set; }
-
-        /// <summary>
-        /// Defines way to authenticate communication.
-        /// </summary>
-        AuthenticationMode AuthenticationMode { get; set; }
 
         /// <summary>
         /// It's used as identifier to obtain endpoint configuration(s) via transport layer.

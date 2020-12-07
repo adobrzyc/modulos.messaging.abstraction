@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 
-namespace Modulos.Messaging.Configuration
+namespace Modulos.Messaging
 {
     [DataContract]
     public struct EndpointConfigInfo : IEquatable<EndpointConfigInfo>

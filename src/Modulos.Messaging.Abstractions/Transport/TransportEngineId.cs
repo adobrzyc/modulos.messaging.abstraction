@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 
-namespace Modulos.Messaging.Transport
+namespace Modulos.Messaging
 {
     /// <summary>
     /// Defines unique identifier of transport.

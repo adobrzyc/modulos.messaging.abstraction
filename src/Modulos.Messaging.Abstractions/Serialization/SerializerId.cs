@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Modulos.Messaging.Serialization
+namespace Modulos.Messaging
 {
     [DataContract]
     public struct SerializerId : IEquatable<SerializerId>

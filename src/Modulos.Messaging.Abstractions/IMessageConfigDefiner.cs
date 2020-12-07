@@ -1,3 +1,6 @@
+// ReSharper disable UnusedType.Global
+// ReSharper disable UnusedMember.Global
+
 namespace Modulos.Messaging
 {
     public interface IMessageConfigDefiner

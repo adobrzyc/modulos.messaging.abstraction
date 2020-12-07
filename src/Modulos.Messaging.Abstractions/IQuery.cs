@@ -1,4 +1,5 @@
 ﻿// ReSharper disable UnusedTypeParameter
+// ReSharper disable UnusedType.Global
 
 namespace Modulos.Messaging
 {
